@@ -1,0 +1,118 @@
+/*Inicio Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(61, 60, 60, 0.233); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100px;
+    box-sizing: border-box;
+}
+h1{
+    color: azure;
+    font-size: 3em;
+}
+.contenedor_logo {
+    position: relative;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 50px;
+
+}
+.logo{
+    width: 70px; 
+    height: auto;
+   
+}
+
+.buscador{
+    flex: 1;
+    text-align: center;
+}
+.buscar{
+    width: 40%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.botones{
+    color: azure;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 12px 10px;
+    border: 2px solid white;
+    background-color: rgba(110, 105, 105, 0.233);
+    color: white;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3; 
+}
+/*Fin Header*/
+
+
+/*Inicio Body*/
+body{
+    background-image:url(machu-picchu.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    color: azure; 
+    gap: 0px; 
+}
+
+.opciones{
+    padding: 30px 6%;
+    border: 2px solid white;
+    background-color: rgba(19, 18, 18, 0.808);
+    color: white;
+    cursor: pointer;
+}
+.opciones:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+
+
+/*Fin Body*/
+
+/*Inicio Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: rgba(22, 21, 21, 0.918); 
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+
+
+
+
+
+
+/*Fin Footer*/
