@@ -1,11 +1,11 @@
 /*Inicio Header*/
 header{
-    display: flex;
+    display: flex; /* Usamos Flexbox para alinear los elementos */
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: rgba(61, 60, 60, 0.233); 
-    position: fixed;
+    position: fixed; /* El header esta fijo en la parte superior */
     width: 100%;
     top: 0;
     right: 0;
@@ -13,27 +13,29 @@ header{
     height: 100px;
     box-sizing: border-box;
 }
+
 h1{
     color: azure;
     font-size: 3em;
 }
+
 .contenedor_logo {
     position: relative;
     align-items: center;
     margin-left: 10%;
     margin-right: 50px;
-
 }
+
 .logo{
-    width: 70px; 
+    width: 70px;
     height: auto;
-   
 }
 
 .buscador{
     flex: 1;
     text-align: center;
 }
+
 .buscar{
     width: 40%; 
     padding: 5px;
@@ -53,27 +55,30 @@ h1{
     background-color: rgba(110, 105, 105, 0.233);
     color: white;
     cursor: pointer;
+    border-radius: 5px; /* Agregamos border-radius para bordes redondeados */
 }
-.button:hover {
-    background-color: #0056b3; 
-}
-/*Fin Header*/
 
+.button:hover {
+    background-color: #0056b3;
+}
+
+/*Fin Header*/
 
 /*Inicio Body*/
 body{
-    background-image:url(machu-picchu.png) ;
+    background-image: url(machu-picchu.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: fixed;
+    margin-top: 100px; /* Para que el contenido no se oculte debajo del header fijo */
 }
 
 .menu{
     display: flex;
     justify-content: center;
     margin-top: 85px;
-    color: azure; 
-    gap: 0px; 
+    color: azure;
+    gap: 0px;
 }
 
 .opciones{
@@ -82,15 +87,34 @@ body{
     background-color: rgba(19, 18, 18, 0.808);
     color: white;
     cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
 }
+
 .opciones:hover {
-    background-color: #0b0ed1; 
+    background-color: #0b0ed1;
 }
 
+.imagen-box {
+    display: flex;
+    justify-content: space-between; /* Usamos espacio entre las imagenes */
+    padding: 48px;
+    gap: 30px;
+}
 
+.imagen {
+    width: 30%; /* Usamos porcentaje para tamaño relativo */
+    height: auto;
+    max-width: 200px;
+    border: 1px solid white;
+    background-color: rgba(19, 18, 18, 0.808);
+    padding: 5px;
+    border-radius: 10px; 
+}
 
-
-
+.imagen:hover {
+    background-color: #0b0ed1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
 
 /*Fin Body*/
 
@@ -98,38 +122,48 @@ body{
 footer{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
-    padding: 20px 40px; 
+    align-items: flex-start;
+    padding: 20px 40px;
     background-color: rgba(22, 21, 21, 0.918);
     position: fixed;
-    width: 96%;
+    width: 100%;
     bottom: 0;
     right: 0;
     z-index: 1000;
-    color: white; 
+    color: white;
 }
 
 .izquierda, .medio, .derecha {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .izquierda p, .medio p {
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
 .medio {
-        text-align: center;
-        margin: 40px;
-        gap: 10px;
-        letter-spacing: 2px; 
+    text-align: center;
+    margin: 40px;
+    gap: 10px;
+    letter-spacing: 2px;
 }
 
+.redes {
+    display: flex;
+    justify-content: space-around; /* Distribuye las imagenes horizontalmente */
+    gap: 10px;
+    margin-top: 10px; 
+}
 
+.red-social {
+    width: 30px; 
+    height: auto;
+    border-radius: 5px; 
+}
 
-
-
-
-
+.red-social:hover {
+    opacity: 0.7; 
+}
 
 /*Fin Footer*/
